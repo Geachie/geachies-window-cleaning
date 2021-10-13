@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  color: #176683;
+  background-color: #fff;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+#logo-image {
+  width: 20vh;
+  display: block;
+  margin: auto;
+  animation-name: moveInRight;
+  animation-duration: 1s;
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  70% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+nav {
+  background: linear-gradient(to right, #025c78, #1fb9e7);
+  overflow: hidden;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+nav a:active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+nav .icon {
+  display: none;
+}
+
+.hero {
+  height: 70vh;
+  background-image: linear-gradient(to right, #025d78dc, #1fb8e7c5),
+    url(/images/geachies-img1.png);
+  background-size: cover;
+  background-position: top;
+
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  position: relative;
+}
+
+.text-box {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading-main {
+  color: #fff;
+
+  backface-visibility: hidden;
+}
+
+.heading-main-top {
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  70% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.heading-main-bottom {
+  display: block;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 1.5rem;
+  animation-name: moveInRight;
+  animation-duration: 1s;
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 50px;
+  border-color: white;
+  border-width: 2px;
+}
+
+.btn-white {
+  background-color: #1fb9e7;
+  color: #fff;
+}
+/*#background-img {
+  width: 100vw;
+  opacity: 0.1;
+}*/
+
+@media screen and (max-width: 600px) {
+  nav a:not(:first-child) {
+    display: none;
+  }
+  nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav.responsive {
+    position: relative;
+  }
+  nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
