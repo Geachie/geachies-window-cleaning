@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 65.25%;
+}
+
 body {
   font-size: 62.5%;
   color: #176683;
@@ -24,10 +28,10 @@ body {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
   70% {
-    transform: translateX(-10px);
+    transform: translateX(-1rem);
   }
 
   100% {
@@ -46,7 +50,7 @@ nav a {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 1.4rem 1.6rem;
   text-decoration: none;
   font-size: 1.5rem;
 }
@@ -66,7 +70,7 @@ nav .icon {
 }
 
 .hero {
-  height: 70vh;
+  height: 100vh;
   background-image: linear-gradient(to right, #025d78dc, #1fb8e7c5),
     url(/images/geachies-img1.png);
   background-size: cover;
@@ -102,10 +106,10 @@ nav .icon {
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
   70% {
-    transform: translateX(10px);
+    transform: translateX(1rem);
   }
 
   100% {
@@ -127,11 +131,11 @@ nav .icon {
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 40px;
+  padding: 1.5rem 4rem;
   display: inline-block;
-  border-radius: 50px;
+  border-radius: 5rem;
   border-color: white;
-  border-width: 2px;
+  border-width: 0.2rem;
 }
 
 .btn-white {
