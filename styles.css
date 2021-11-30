@@ -23,12 +23,17 @@ body {
   position: relative;
   background-color: white;
   display: flex;
+  justify-content: center;
+  height: 50vh;
+  width: auto;
 }
 
 #logo-image {
-  width: 15vw;
   display: inline-block;
-  margin: auto;
+  /* margin: auto; */
+  display: flex;
+
+  width: auto;
   animation-name: moveInRight;
   animation-duration: 1s;
 
@@ -56,10 +61,15 @@ body {
 nav {
   background: linear-gradient(to right, #025c78, #1fb9e7);
   overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  text-transform: uppercase;
 }
 
 nav a {
-  float: left;
+  display: flex;
+
+  /* float: left; */
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -83,13 +93,14 @@ nav .icon {
 }
 
 .hero {
-  height: 100vh;
+  height: 50vh;
   background-image: linear-gradient(to right, #025d78dc, #1fb8e7c5),
     url(/images/geachies-img1.png);
   background-size: cover;
   background-position: top;
 
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  background-attachment: scroll, fixed;
   position: relative;
 }
 
@@ -172,7 +183,7 @@ p {
   }
 
   #logo-image {
-    width: 60vw;
+    width: 30vw;
     display: inline-block;
     margin: auto;
     animation-name: moveInRight;
@@ -204,7 +215,7 @@ p {
   }
 
   .hero {
-    height: 70vh;
+    height: 60vh;
   }
 
   .heading-main-top {
